@@ -58,7 +58,7 @@ function SWEP:SetZoom(state)
     end
 
     if state then
-        owner:SetFOV(62, 0.2)
+        owner:SetFOV(62, 0.5)
     else
         owner:SetFOV(0, 0.2)
     end
