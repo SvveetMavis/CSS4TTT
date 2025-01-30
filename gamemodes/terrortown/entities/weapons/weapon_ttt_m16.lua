@@ -24,7 +24,7 @@ SWEP.WeaponID = AMMO_M16
 SWEP.spawnType = WEAPON_TYPE_HEAVY
 
 SWEP.Primary.Delay = 0.19
-SWEP.Primary.Recoil = 2.2
+SWEP.Primary.Recoil = 1.9
 SWEP.Primary.Automatic = true
 SWEP.Primary.Ammo = "Pistol"
 SWEP.Primary.Damage = 23
@@ -34,7 +34,7 @@ SWEP.Primary.ClipMax = 30
 SWEP.Primary.DefaultClip = 15
 SWEP.Primary.Sound = Sound("Weapon_M4A1.Single")
 SWEP.DeploySpeed = 0.8
-SWEP.HeadshotMultiplier = 2
+SWEP.HeadshotMultiplier = 2.7
 
 SWEP.AutoSpawnable = true
 SWEP.Spawnable = true
