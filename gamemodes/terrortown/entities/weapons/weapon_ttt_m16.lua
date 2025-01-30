@@ -21,6 +21,7 @@ SWEP.Base = "weapon_tttbase"
 
 SWEP.Kind = WEAPON_HEAVY
 SWEP.WeaponID = AMMO_M16
+SWEP.builtin = true
 SWEP.spawnType = WEAPON_TYPE_HEAVY
 
 SWEP.Primary.Delay = 0.19
@@ -45,8 +46,8 @@ SWEP.ViewModel = "models/weapons/cstrike/c_rif_m4a1.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 SWEP.idleResetFix = true
 
-SWEP.IronSightsPos         = Vector(-7.677, -9.2, 0.55)
-SWEP.IronSightsAng         = Vector(2.95, -1.4, -3.7)
+SWEP.IronSightsPos = Vector(-7.677, -9.2, 0.55)
+SWEP.IronSightsAng = Vector(2.95, -1.4, -3.7)
 
 ---
 -- @ignore
@@ -124,3 +125,4 @@ hook.Add("TTTPlayerSpeedModifier", "MSpeed" , function(ply, _, _, noLag )
       end
     end
 end )
+
