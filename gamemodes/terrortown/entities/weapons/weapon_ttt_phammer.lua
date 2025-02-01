@@ -97,6 +97,7 @@ function SWEP:Initialize()
             ghost:SetNoDraw(true)
             self.Ghost = ghost
         end
+        self:AddTTT2HUDHelp("polter_help_primary", "polter_help_secondary")
     end
 
     self.IsCharging = false
