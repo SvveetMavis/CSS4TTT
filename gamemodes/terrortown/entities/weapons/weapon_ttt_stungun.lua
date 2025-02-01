@@ -112,7 +112,7 @@ function SWEP:ShootBullet(dmg, recoil, numbul, cone)
                 if SERVER and ent:IsPlayer() then
                     local eyeang = ent:EyeAngles()
 
-                    local j = 3
+                    local j = 1
                     eyeang.pitch = math.Clamp(eyeang.pitch + math.Rand(-j, j), -90, 90)
                     eyeang.yaw = math.Clamp(eyeang.yaw + math.Rand(-j, j), -90, 90)
                     ent:SetEyeAngles(eyeang)
