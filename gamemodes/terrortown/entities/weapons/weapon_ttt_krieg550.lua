@@ -16,7 +16,7 @@ SWEP.Spawnable = true
 
 SWEP.Kind = WEAPON_HEAVY
 
-SWEP.Primary.Delay          = 1
+SWEP.Primary.Delay          = 0.7
 SWEP.Primary.Recoil         = 1.5
 SWEP.Primary.Automatic = false
 SWEP.Primary.Ammo = "357"
@@ -28,7 +28,6 @@ SWEP.Primary.DefaultClip = 8
 SWEP.Primary.Sound = Sound("Weapon_SG550.Single")
 SWEP.Secondary.Sound = Sound("Default.Zoom")
 SWEP.DeploySpeed = 0.7
-SWEP.Primary.SoundLevel    = 150
 SWEP.spawnType = WEAPON_TYPE_SNIPER
 
 SWEP.HeadshotMultiplier = 2
@@ -202,25 +201,25 @@ function SWEP:BfgFire(worldsnd)
 	if self.mode == "single" then
 		self:TakePrimaryAmmo( 1 )
 		recoil = 5
-		damage = 15
+		damage = 25
 	end
 		
 	if self.mode == "2" then
 		self:TakePrimaryAmmo( 2 )
 		recoil = 10
-		damage = 20
+		damage = 35
 	end
 		
 	if self.mode == "3" then
 		self:TakePrimaryAmmo( 3 )
 		recoil = 20
-		damage = 40
+		damage = 50
 	end
 			
 	if self.mode == "4" then
 		self:TakePrimaryAmmo( 4 )
 		recoil = 40
-		damage = 50
+		damage = 70
 	end
 
    self:ShootBullet( damage, recoil, self.Primary.NumShots, self:GetPrimaryCone() )
